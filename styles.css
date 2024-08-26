@@ -1,0 +1,125 @@
+body {
+  background-color: hsl(0, 0%, 91%);
+}
+#logo {
+  height: 100px;
+  width: 100px;
+  margin: 0%;
+}
+.Text {
+  font-size: 180px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  src: url("fonts/courbd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  align-items: center;
+  display: inline-block;
+}
+#Shorten {
+  color: hsl(237, 20%, 23%);
+}
+#Your {
+  color: hsl(237, 20%, 23%);
+}
+#Url {
+  color: hsl(2, 85%, 66%);
+}
+#input {
+  background-color: hsl(0, 0%, 91%) !important;
+  width: 350px;
+  height: 25px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  text-align: left;
+  padding-left: 25px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  display: inline-block;
+  align-items: center;
+}
+#input:focus {
+  outline: none;
+  background-color: hsl(0, 0%, 91%);
+}
+#submit {
+  background-color: hsl(2, 85%, 66%) !important;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  display: inline-block;
+  align-items: center;
+}
+
+social-platforms {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-platform {
+  margin: 10px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.social-platform:hover {
+  color: #666;
+  margin: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#short-url {
+  background-color: hsl(0, 0%, 91%) !important;
+  width: 240px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+
+  text-align: left;
+  padding-left: 25px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  align-items: center;
+}
+#copy-btn {
+  background-color: hsl(2, 85%, 66%) !important;
+  width: 75px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  padding: 5px 10px;
+  text-align: center;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  display: inline-block;
+  align-items: center;
+}

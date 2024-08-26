@@ -1,4 +1,4 @@
-const apiUrl = "http://tinyurl.com/api-create.php";
+const apiUrl = "https://tinyurl.com/api-create.php";
 const urlInput = document.getElementById("input");
 const shortenBtn = document.getElementById("submit");
 const resultDiv = document.getElementById("result");

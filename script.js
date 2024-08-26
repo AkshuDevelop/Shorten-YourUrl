@@ -14,13 +14,17 @@ shortenBtn.addEventListener("click", async () => {
   }
 
   try {
-    const response = await fetch(`${apiUrl}?url=${longUrl}`);
+    const response = await fetch(
+      `${apiUrl}?url=${encodeURIComponent(longUrl)}`,
+      { mode: "cors" }
+    );
     const shortUrl = await response.text();
+    console.log(`Short URL: ${shortUrl}`);
     shortUrlInput.value = shortUrl;
     resultDiv.style.display = "block";
   } catch (error) {
-    console.error(error);
-    resultDiv.innerText = "Error shortening URL";
+    console.error(`Error shortening URL: ${error.message}`);
+    resultDiv.innerText = `Error shortening URL: ${error.message}`;
   }
 });
 

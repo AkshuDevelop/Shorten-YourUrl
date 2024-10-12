@@ -1,39 +1,39 @@
-select {
-  font-family: "Courier New", Courier, monospace;
-  src: url("fonts/courbd.ttf") format("truetype");
-  font-size: 12px;
-  color: black;
-  font-weight: bold;
-  padding: 5px;
-  text-align: left;
-  padding-left: 25px;
-  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
-  outline: 1px solid black;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-image: url("Images/Dropdown.png");
-  background-size: 25px 25px;
-  background-position: 97% 50%;
-  background-repeat: no-repeat;
-}
-
 body {
   background-color: hsl(0, 0%, 91%);
 }
-
-#template {
-  background-color: hsl(0, 0%, 100%);
-  border-color: black;
-  height: 50px;
-  width: 60%;
-  border-radius: 15px;
-  border: 2px;
+#logo {
+  height: 100px;
+  width: 100px;
+  margin: 0%;
 }
-.input {
+.Text {
+  font-size: 1100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  src: url("fonts/courbd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  align-items: center;
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .Text {
+    font-size: 7rem;
+  }
+}
+#Shorten {
+  color: hsl(237, 20%, 23%);
+  margin-top: 30px;
+}
+#Your {
+  color: hsl(237, 20%, 23%);
+}
+#Url {
+  color: hsl(2, 85%, 66%);
+}
+#input {
   background-color: hsl(0, 0%, 91%) !important;
-  width: 230px;
+  width: 350px;
   height: 25px;
   border-radius: 10px;
   font-family: "Courier New", Courier, monospace;
@@ -41,57 +41,32 @@ body {
   color: black;
   font-weight: bold;
   padding: 5px;
+  margin-top: 15px;
   text-align: left;
   padding-left: 25px;
   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
   border: 1px solid black;
-
-  margin-right: 10px;
+  display: inline-block;
   align-items: center;
 }
-.input:focus {
+#input:focus {
   outline: none;
   background-color: hsl(0, 0%, 91%);
 }
-#meme {
-  height: 250px;
-  width: 800px;
-  margin-top: 50px;
-  object-fit: contain;
-}
-
-@media only screen and (max-width: 600px) {
-  #meme {
-    width: 100%;
-    height: 150px;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  #meme {
-    width: 80%;
-    height: 200px;
-  }
-}
-
-@media only screen and (min-width: 1025px) {
-  #meme {
-    width: 800px;
-    height: 250px;
-  }
-}
-
-#generate-meme-image {
-  height: 100px;
-  width: 300px;
-}
-
-#selectfont {
-  font-size: medium;
+#submit {
+  background-color: hsl(2, 85%, 66%) !important;
+  width: 120px;
+  height: 35px;
+  border-radius: 10px;
   font-family: "Courier New", Courier, monospace;
-  font-weight: lighter;
+  font-size: 12px;
+  color: black;
+  font-weight: bolder;
+  padding-top: 5px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  display: inline-block;
   align-items: center;
-  text-align: center;
 }
 
 .social-platforms {
@@ -117,11 +92,7 @@ body {
   display: flex;
   align-items: center;
 }
-#logo {
-  height: 100px;
-  width: 100px;
-  margin: 0%;
-}
+
 .social {
   height: 25px;
   width: 25px;
@@ -130,20 +101,33 @@ body {
   align-items: center;
 }
 
-#generate-meme-image {
-  height: 100px;
-  width: 300px;
-  margin-bottom: 20px;
+#short-url {
+  background-color: hsl(0, 0%, 91%) !important;
+  width: 240px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+
+  text-align: left;
+  padding-left: 25px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+  align-items: center;
 }
-#download-meme {
+#copy-btn {
   background-color: hsl(2, 85%, 66%) !important;
-  width: 120px;
-  height: 35px;
+  width: 75px;
+  height: 30px;
   border-radius: 10px;
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
   color: black;
   font-weight: bolder;
+  padding: 5px 10px;
+  text-align: center;
   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
   border: 1px solid black;
   display: inline-block;
